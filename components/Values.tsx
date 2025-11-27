@@ -6,7 +6,7 @@ export default function Values() {
             <div className="container mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <Link href="/our-values" className="block group">
-                        <div className="text-center bg-white rounded-lg border border-gray-100 shadow-sm p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full">
+                        <div className="text-center bg-white rounded-lg border border-gray-100 shadow-sm p-4 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full">
                             <img
                                 alt="Modern skyscraper architecture"
                                 className="w-full h-48 object-cover rounded-lg mb-6"
@@ -21,7 +21,7 @@ export default function Values() {
                         </div>
                     </Link>
                     <Link href="/our-culture" className="block group">
-                        <div className="text-center bg-white rounded-lg border border-gray-100 shadow-sm p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full">
+                        <div className="text-center bg-white rounded-lg border border-gray-100 shadow-sm p-4 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full">
                             <img
                                 alt="People playing a game of chess"
                                 className="w-full h-48 object-cover rounded-lg mb-6"
@@ -36,7 +36,7 @@ export default function Values() {
                         </div>
                     </Link>
                     <Link href="/achievements" className="block group">
-                        <div className="text-center bg-white rounded-lg border border-gray-100 shadow-sm p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full">
+                        <div className="text-center bg-white rounded-lg border border-gray-100 shadow-sm p-4 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full">
                             <img
                                 alt="A professional in a business suit"
                                 className="w-full h-48 object-cover rounded-lg mb-6"

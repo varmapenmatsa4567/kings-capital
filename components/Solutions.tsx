@@ -11,7 +11,7 @@ export default function Solutions() {
                     </p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
-                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow flex flex-col">
+                    <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow flex flex-col">
                         <img
                             alt="Architectural blueprint and pen"
                             className="w-full h-32 object-cover rounded mb-4"
@@ -27,7 +27,7 @@ export default function Solutions() {
                             Read More →
                         </a>
                     </div>
-                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow flex flex-col">
+                    <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow flex flex-col">
                         <img
                             alt="Modern office building exterior"
                             className="w-full h-32 object-cover rounded mb-4"
@@ -43,7 +43,7 @@ export default function Solutions() {
                             Read More →
                         </a>
                     </div>
-                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow flex flex-col">
+                    <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow flex flex-col">
                         <img
                             alt="Person pointing at a futuristic interface"
                             className="w-full h-32 object-cover rounded mb-4"
@@ -59,7 +59,7 @@ export default function Solutions() {
                             Read More →
                         </a>
                     </div>
-                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow flex flex-col">
+                    <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow flex flex-col">
                         <img
                             alt="Abstract digital network graphic"
                             className="w-full h-32 object-cover rounded mb-4"
@@ -75,7 +75,7 @@ export default function Solutions() {
                             Read More →
                         </a>
                     </div>
-                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow flex flex-col">
+                    <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow flex flex-col">
                         <img
                             alt="Abstract architectural shapes"
                             className="w-full h-32 object-cover rounded mb-4"
