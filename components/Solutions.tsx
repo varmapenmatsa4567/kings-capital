@@ -1,17 +1,39 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function Solutions() {
     return (
         <section className="py-16 sm:py-24 bg-[#F8F7F5]">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-[family-name:var(--font-display)] font-bold text-[#333333]">
+                    <motion.h2
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                        className="text-3xl md:text-4xl font-[family-name:var(--font-display)] font-bold text-[#333333]"
+                    >
                         Our Financial Solutions
-                    </h2>
-                    <p className="mt-4 max-w-2xl mx-auto text-[#666666]">
+                    </motion.h2>
+                    <motion.p
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                        className="mt-4 max-w-2xl mx-auto text-[#666666]"
+                    >
                         Comprehensive and tailored financial services to meet the diverse needs of our clients.
-                    </p>
+                    </motion.p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
-                    <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow flex flex-col">
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: 0.1 }}
+                        className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow flex flex-col"
+                    >
                         <img
                             alt="Architectural blueprint and pen"
                             className="w-full h-32 object-cover rounded mb-4"
@@ -26,8 +48,14 @@ export default function Solutions() {
                         <a className="mt-4 text-sm font-semibold text-[#8B0000] hover:underline" href="#">
                             Read More →
                         </a>
-                    </div>
-                    <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow flex flex-col">
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: 0.2 }}
+                        className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow flex flex-col"
+                    >
                         <img
                             alt="Modern office building exterior"
                             className="w-full h-32 object-cover rounded mb-4"
@@ -42,8 +70,14 @@ export default function Solutions() {
                         <a className="mt-4 text-sm font-semibold text-[#8B0000] hover:underline" href="#">
                             Read More →
                         </a>
-                    </div>
-                    <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow flex flex-col">
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: 0.3 }}
+                        className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow flex flex-col"
+                    >
                         <img
                             alt="Person pointing at a futuristic interface"
                             className="w-full h-32 object-cover rounded mb-4"
@@ -58,8 +92,14 @@ export default function Solutions() {
                         <a className="mt-4 text-sm font-semibold text-[#8B0000] hover:underline" href="#">
                             Read More →
                         </a>
-                    </div>
-                    <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow flex flex-col">
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: 0.4 }}
+                        className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow flex flex-col"
+                    >
                         <img
                             alt="Abstract digital network graphic"
                             className="w-full h-32 object-cover rounded mb-4"
@@ -74,8 +114,14 @@ export default function Solutions() {
                         <a className="mt-4 text-sm font-semibold text-[#8B0000] hover:underline" href="#">
                             Read More →
                         </a>
-                    </div>
-                    <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow flex flex-col">
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: 0.5 }}
+                        className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow flex flex-col"
+                    >
                         <img
                             alt="Abstract architectural shapes"
                             className="w-full h-32 object-cover rounded mb-4"
@@ -90,7 +136,7 @@ export default function Solutions() {
                         <a className="mt-4 text-sm font-semibold text-[#8B0000] hover:underline" href="#">
                             Read More →
                         </a>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>

@@ -1,8 +1,18 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function CEOMessage() {
     return (
         <section className="py-16 sm:py-24 bg-[#F8F7F5]">
             <div className="container mx-auto px-6 max-w-4xl">
-                <div className="bg-white p-8 md:p-12 rounded-lg shadow-lg">
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                    className="bg-white p-8 md:p-12 rounded-lg shadow-lg"
+                >
                     <h2 className="text-center text-3xl font-[family-name:var(--font-display)] font-bold mb-8 text-[#333333]">
                         CEO Message
                     </h2>
@@ -18,7 +28,11 @@ export default function CEOMessage() {
                         </span>
                     </div>
                     <div className="mt-8 flex items-center justify-center">
-                        <img
+                        <motion.img
+                            initial={{ scale: 0 }}
+                            whileInView={{ scale: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: 0.3 }}
                             alt="Portrait of Dr. ABDUL KHALIK"
                             className="w-16 h-16 rounded-full object-cover"
                             src="https://pbs.twimg.com/profile_images/698591780065792000/jGoNrlQB_400x400.jpg"
@@ -28,7 +42,7 @@ export default function CEOMessage() {
                             <p className="text-sm text-[#666666]">Founder &amp; CEO</p>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
     );
