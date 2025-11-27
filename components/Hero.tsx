@@ -1,19 +1,43 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
 
 export default function Hero() {
+    const images = [
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuDYa1hNqavnBnYKh3Tvy-f5UnCwTVfsWZ5r8EYAI5l9ILqeLvGF56xBCRH8oNoavryS3Pc0X8UljK2GojiqdrDW91sFttanD295NW5hD5Sgt6j3KOR5tphi-kHExDefFVWwWdTWk1RB7zml_YdTW01FU4Bchv58ujfIBS9Ukxav4n1hq97eUc40HVGYXHdax53NDH5hGQEa3WYy-N7L9k-hGJ6cKGrn7HnsMrX8osM7BYaQfiWNs7uhjnXa5z4yAM43zO_NLQLTgxg",
+        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&dl=sean-pollock-PhYq704ffdA-unsplash.jpg", // Placeholder image 1
+        "https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&dl=toa-heftiba-_UIVmIBB3JU-unsplash.jpg", // Placeholder image 2
+    ];
+
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }, 5000); // Change image every 5 seconds
+
+        return () => clearInterval(interval);
+    }, [images.length]);
+
     return (
         <section className="relative h-[60vh] min-h-[500px] text-white flex items-center overflow-hidden">
             <div className="absolute inset-0 bg-black/60 z-10"></div>
-            <motion.img
-                initial={{ scale: 1.1 }}
-                animate={{ scale: 1 }}
-                transition={{ duration: 10, repeat: Infinity, repeatType: "reverse" }}
-                alt="Dubai skyline with Burj Khalifa"
-                className="absolute inset-0 w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYa1hNqavnBnYKh3Tvy-f5UnCwTVfsWZ5r8EYAI5l9ILqeLvGF56xBCRH8oNoavryS3Pc0X8UljK2GojiqdrDW91sFttanD295NW5hD5Sgt6j3KOR5tphi-kHExDefFVWwWdTWk1RB7zml_YdTW01FU4Bchv58ujfIBS9Ukxav4n1hq97eUc40HVGYXHdax53NDH5hGQEa3WYy-N7L9k-hGJ6cKGrn7HnsMrX8osM7BYaQfiWNs7uhjnXa5z4yAM43zO_NLQLTgxg"
-            />
+            <AnimatePresence mode="wait">
+                <motion.img
+                    key={currentImageIndex} // Key changes to force re-render and re-trigger animations
+                    initial={{ opacity: 0, scale: 1.1 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{
+                        opacity: { duration: 0.8 },
+                        scale: { duration: 10, repeat: Infinity, repeatType: "reverse" },
+                    }}
+                    alt="Dubai skyline or related content"
+                    className="absolute inset-0 w-full h-full object-cover"
+                    src={images[currentImageIndex]}
+                />
+            </AnimatePresence>
             <div className="container mx-auto px-6 relative z-20 text-center">
                 <motion.h1
                     initial={{ opacity: 0, y: 30 }}
