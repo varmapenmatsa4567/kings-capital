@@ -105,7 +105,7 @@ export default function Header() {
                     </div>
 
                     <Link className="hover:text-[#8B0000] transition-colors" href="#">Blog</Link>
-                    <Link className="hover:text-[#8B0000] transition-colors" href="#">Contact</Link>
+                    <Link className="hover:text-[#8B0000] transition-colors" href="/contact">Contact</Link>
                 </nav>
 
                 <button
@@ -172,7 +172,7 @@ export default function Header() {
                     </div>
 
                     <Link className="text-[#666666] hover:text-[#8B0000] transition-colors block" href="#" onClick={() => setIsMenuOpen(false)}>Blog</Link>
-                    <Link className="text-[#666666] hover:text-[#8B0000] transition-colors block" href="#" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+                    <Link className="text-[#666666] hover:text-[#8B0000] transition-colors block" href="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
                 </div>
             )}
         </header>
