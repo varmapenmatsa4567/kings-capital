@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { MdGroups, MdHub, MdHandshake, MdInsights, MdSpeed } from "react-icons/md";
 
 export default function WhyKings() {
     return (
@@ -34,7 +35,7 @@ export default function WhyKings() {
                         transition={{ duration: 0.5, delay: 0.1 }}
                         className="p-6 rounded-xl shadow-xl bg-gray-800 hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-2"
                     >
-                        <span className="material-icons-outlined text-9xl mb-4 text-amber-400">groups</span>
+                        <MdGroups size={40} className="mb-4 mx-auto text-amber-400" />
                         <h4 className="font-bold text-md text-gray-100">Experienced Team</h4>
                     </motion.div>
                     <motion.div
@@ -44,7 +45,7 @@ export default function WhyKings() {
                         transition={{ duration: 0.5, delay: 0.2 }}
                         className="p-6 rounded-xl shadow-xl bg-gray-800 hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-2"
                     >
-                        <span className="material-icons-outlined text-9xl mb-4 text-amber-400">hub</span>
+                        <MdHub size={40} className="mb-4 mx-auto text-amber-400" />
                         <h4 className="font-bold text-md text-gray-100">Extensive Network</h4>
                     </motion.div>
                     <motion.div
@@ -54,7 +55,7 @@ export default function WhyKings() {
                         transition={{ duration: 0.5, delay: 0.3 }}
                         className="p-6 rounded-xl shadow-xl bg-gray-800 hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-2"
                     >
-                        <span className="material-icons-outlined text-9xl mb-4 text-amber-400">handshake</span>
+                        <MdHandshake size={40} className="mb-4 mx-auto text-amber-400" />
                         <h4 className="font-bold text-md text-gray-100">Active Sponsors</h4>
                     </motion.div>
                     <motion.div
@@ -64,7 +65,7 @@ export default function WhyKings() {
                         transition={{ duration: 0.5, delay: 0.4 }}
                         className="p-6 rounded-xl shadow-xl bg-gray-800 hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-2"
                     >
-                        <span className="material-icons-outlined text-9xl mb-4 text-amber-400">insights</span>
+                        <MdInsights size={40} className="mb-4 mx-auto text-amber-400" />
                         <h4 className="font-bold text-md text-gray-100">Strategic Partnership</h4>
                     </motion.div>
                     <motion.div
@@ -74,7 +75,7 @@ export default function WhyKings() {
                         transition={{ duration: 0.5, delay: 0.5 }}
                         className="p-6 rounded-xl shadow-xl bg-gray-800 hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-2"
                     >
-                        <span className="material-icons-outlined text-9xl mb-4 text-amber-400">speed</span>
+                        <MdSpeed size={40} className="mb-4 mx-auto text-amber-400" />
                         <h4 className="font-bold text-md text-gray-100">Quick Execution</h4>
                     </motion.div>
                 </div>

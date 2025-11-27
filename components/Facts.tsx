@@ -2,6 +2,7 @@
 
 import { motion, useSpring, useTransform, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
+import { FaGlobeAmericas, FaBuilding, FaPiggyBank, FaCheckCircle } from 'react-icons/fa';
 
 function AnimatedNumber({ value, prefix = "", suffix = "", delay = 0 }: { value: number, prefix?: string, suffix?: string, delay?: number }) {
     const ref = useRef(null);
@@ -31,7 +32,7 @@ export default function Facts() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.1 }}
                     >
-                        <span className="material-icons-outlined text-4xl mb-2 opacity-80">public</span>
+                        <FaGlobeAmericas className="text-4xl mb-2 opacity-80 mx-auto" />
                         <h3 className="text-4xl font-bold mb-1">
                             <AnimatedNumber value={25} suffix="+" delay={0.1} />
                         </h3>
@@ -43,7 +44,7 @@ export default function Facts() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.2 }}
                     >
-                        <span className="material-icons-outlined text-4xl mb-2 opacity-80">business</span>
+                        <FaBuilding className="text-4xl mb-2 opacity-80 mx-auto" />
                         <h3 className="text-4xl font-bold mb-1">
                             <AnimatedNumber value={500} suffix="+" delay={0.2} />
                         </h3>
@@ -55,7 +56,7 @@ export default function Facts() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.3 }}
                     >
-                        <span className="material-icons-outlined text-4xl mb-2 opacity-80">savings</span>
+                        <FaPiggyBank className="text-4xl mb-2 opacity-80 mx-auto" />
                         <h3 className="text-4xl font-bold mb-1">
                             <AnimatedNumber value={2} prefix="$" suffix="B+" delay={0.3} />
                         </h3>
@@ -67,7 +68,7 @@ export default function Facts() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.4 }}
                     >
-                        <span className="material-icons-outlined text-4xl mb-2 opacity-80">verified</span>
+                        <FaCheckCircle className="text-4xl mb-2 opacity-80 mx-auto" />
                         <h3 className="text-4xl font-bold mb-1">
                             <AnimatedNumber value={15} suffix="+" delay={0.4} />
                         </h3>
