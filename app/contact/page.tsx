@@ -8,19 +8,22 @@ export default function Contact() {
             <Header />
 
             {/* Page Header */}
-            <section className="relative py-20 bg-[#8B0000] text-center">
-                {/* Pattern overlay simulation */}
-                <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(#000 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
+            <section className="relative py-24 md:py-32 bg-gradient-to-br from-gray-900 to-black text-center overflow-hidden">
+                {/* Subtle pattern overlay */}
+                <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'6\' height=\'6\' viewBox=\'0 0 6 6\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%239C92AC\' fill-opacity=\'0.1\' fill-rule=\'evenodd\'%3E%3Cpath d=\'M5 0h1v5h-1V0zm0 1h1v4h-1V1z\'/%3E%3C/g%3E%3C/svg%3E")' }}></div>
 
                 <div className="container mx-auto px-6 relative z-10">
-                    <h1 className="text-4xl md:text-5xl font-[family-name:var(--font-display)] font-bold text-white mb-8">
-                        CONTACT <span className="font-light">US</span>
+                    <h1 className="text-4xl md:text-5xl font-[family-name:var(--font-display)] font-extrabold text-white mb-4 tracking-tight">
+                        GET IN <span className="text-[#D4AF37]">TOUCH</span>
                     </h1>
+                    <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+                        We're here to help and answer any question you might have. We look forward to hearing from you.
+                    </p>
 
-                    <div className="inline-block bg-white py-3 px-8 rounded-sm shadow-sm">
-                        <p className="text-sm font-medium text-[#666666]">
-                            You are here: <Link href="/" className="hover:text-[#8B0000]">Home</Link> <span className="mx-2">»</span> <span className="text-[#8B0000]">Contact</span>
-                        </p>
+                    <div className="flex justify-center items-center text-sm font-medium text-gray-400">
+                        <Link href="/" className="hover:text-[#D4AF37] transition-colors duration-200">Home</Link>
+                        <span className="mx-3 text-gray-500">/</span>
+                        <span className="text-[#D4AF37]">Contact Us</span>
                     </div>
                 </div>
             </section>
@@ -46,35 +49,35 @@ export default function Contact() {
                                     <input
                                         type="text"
                                         placeholder="Your name here"
-                                        className="w-full bg-[#F8F7F5] border-none p-4 text-sm text-[#333333] placeholder-[#999999] focus:ring-1 focus:ring-[#8B0000] outline-none"
+                                        className="w-full bg-[#F8F7F5] border border-gray-300 rounded-md p-4 text-sm text-[#333333] placeholder-[#999999] focus:border-[#D4AF37] focus:ring-2 focus:ring-[#D4AF37] outline-none transition-all duration-200"
                                     />
                                     <input
                                         type="email"
                                         placeholder="Your email"
-                                        className="w-full bg-[#F8F7F5] border-none p-4 text-sm text-[#333333] placeholder-[#999999] focus:ring-1 focus:ring-[#8B0000] outline-none"
+                                        className="w-full bg-[#F8F7F5] border border-gray-300 rounded-md p-4 text-sm text-[#333333] placeholder-[#999999] focus:border-[#D4AF37] focus:ring-2 focus:ring-[#D4AF37] outline-none transition-all duration-200"
                                     />
                                     <input
                                         type="tel"
                                         placeholder="Phone"
-                                        className="w-full bg-[#F8F7F5] border-none p-4 text-sm text-[#333333] placeholder-[#999999] focus:ring-1 focus:ring-[#8B0000] outline-none"
+                                        className="w-full bg-[#F8F7F5] border border-gray-300 rounded-md p-4 text-sm text-[#333333] placeholder-[#999999] focus:border-[#D4AF37] focus:ring-2 focus:ring-[#D4AF37] outline-none transition-all duration-200"
                                     />
                                 </div>
 
                                 <input
                                     type="text"
                                     placeholder="Subject"
-                                    className="w-full bg-[#F8F7F5] border-none p-4 text-sm text-[#333333] placeholder-[#999999] focus:ring-1 focus:ring-[#8B0000] outline-none"
+                                    className="w-full bg-[#F8F7F5] border border-gray-300 rounded-md p-4 text-sm text-[#333333] placeholder-[#999999] focus:border-[#D4AF37] focus:ring-2 focus:ring-[#D4AF37] outline-none transition-all duration-200"
                                 />
 
                                 <textarea
                                     rows={6}
                                     placeholder="Your message"
-                                    className="w-full bg-[#F8F7F5] border-none p-4 text-sm text-[#333333] placeholder-[#999999] focus:ring-1 focus:ring-[#8B0000] outline-none resize-none"
+                                    className="w-full bg-[#F8F7F5] border border-gray-300 rounded-md p-4 text-sm text-[#333333] placeholder-[#999999] focus:border-[#D4AF37] focus:ring-2 focus:ring-[#D4AF37] outline-none resize-none transition-all duration-200"
                                 ></textarea>
 
                                 <button
                                     type="submit"
-                                    className="bg-[#8B0000] text-white font-bold py-4 px-8 text-sm uppercase tracking-wider hover:bg-red-900 transition-colors"
+                                    className="bg-[#8B0000] hover:cursor-pointer text-white font-bold py-4 px-8 text-sm uppercase tracking-wider rounded-md shadow-lg hover:bg-red-900 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#8B0000] focus:ring-opacity-50"
                                 >
                                     SEND MESSAGE
                                 </button>
@@ -122,15 +125,15 @@ export default function Contact() {
                                 <div className="flex items-start">
                                     <span className="material-icons-outlined text-[#D4AF37] mr-4 mt-1">email</span>
                                     <div>
-                                        <p className="font-medium text-[#333333]">info@kingsfinancialcapital.com</p>
-                                        <p className="mt-1">helpdesk@kingsfinancialcapital.com</p>
-                                        <p className="mt-1">clientcare@kingsfinancialcapital.com</p>
+                                        <p className="font-medium text-[#333333]">info@aarmancapital.com</p>
+                                        <p className="mt-1">helpdesk@aarmancapital.com</p>
+                                        <p className="mt-1">clientcare@aarmancapital.com</p>
                                     </div>
                                 </div>
 
                                 <div className="flex items-start">
                                     <span className="material-icons-outlined text-[#D4AF37] mr-4 mt-1">public</span>
-                                    <p>https://kingsfinancialcapital.com/</p>
+                                    <p>https://aarmancapital.com/</p>
                                 </div>
                             </div>
                         </div>

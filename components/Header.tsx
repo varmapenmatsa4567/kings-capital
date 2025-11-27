@@ -46,13 +46,10 @@ export default function Header() {
             <div className="container mx-auto px-6 py-4 flex justify-between items-center">
                 <div className="flex items-center space-x-3">
                     <img
-                        alt="Kings Financial Capital logo"
-                        className="h-12 w-auto"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYu5dMnJo67M6Z3k8P4azzfVWZ6SFD7_e9XBvgTXXxc24TQJIGuHj_LzQ8QMSlKO_HgkFbiXxpk4Dga3NV9TpkU4KsV2kRY6qhMbOk78mvj4aZW1C9752pTGwTiwU03dTBG_k6rwmv32pzZTbTFxkp77htSL6RxrlrUPzy1I5ldDrkGaLqtpNs7jPcJzrmuIIw1wUpUBNiTybPCt4qZS7tTsi8poFKTHKEJ9_Ma2PEiV-3CGrSjiEeLJM9o9_bNPPqpaQrKP5Um94"
+                        alt="Aarman Capital logo"
+                        className="h-16 w-auto"
+                        src="/logo.png"
                     />
-                    <span className="font-[family-name:var(--font-display)] text-xl font-bold text-[#333333] hidden sm:block">
-                        Kings Financial Capital
-                    </span>
                 </div>
 
                 {/* Desktop Navigation */}
@@ -64,17 +61,17 @@ export default function Header() {
 
                     {/* About Us Dropdown */}
                     <div className="relative group">
-                        <button className="hover:text-[#8B0000] transition-colors flex items-center">
+                        <button className="hover:text-[#8B0000] transition-colors flex items-center py-2">
                             About Us
-                            <span className="material-icons-outlined text-sm ml-1">expand_more</span>
+                            <span className="material-icons-outlined text-sm ml-1 group-hover:rotate-180 transition-transform duration-300">expand_more</span>
                         </button>
-                        <div className="absolute left-0 mt-2 w-64 bg-white border border-gray-100 shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left z-50">
+                        <div className="absolute left-0 mt-3 w-64 bg-white border border-gray-100 shadow-xl rounded-md opacity-0 invisible scale-y-95 group-hover:opacity-100 group-hover:visible group-hover:scale-y-100 transition-all duration-300 transform origin-top z-50">
                             <div className="py-2">
                                 {aboutSubmenu.map((item, index) => (
                                     <Link
                                         key={index}
                                         href="#"
-                                        className="block px-4 py-2 text-sm text-[#666666] hover:bg-gray-50 hover:text-[#8B0000]"
+                                        className="block px-4 py-2 text-sm text-[#666666] hover:bg-gray-100 hover:text-[#8B0000] transition-colors"
                                     >
                                         {item}
                                     </Link>
@@ -85,17 +82,17 @@ export default function Header() {
 
                     {/* Our Solutions Dropdown */}
                     <div className="relative group">
-                        <button className="hover:text-[#8B0000] transition-colors flex items-center">
+                        <button className="hover:text-[#8B0000] transition-colors flex items-center py-2">
                             Our Solutions
-                            <span className="material-icons-outlined text-sm ml-1">expand_more</span>
+                            <span className="material-icons-outlined text-sm ml-1 group-hover:rotate-180 transition-transform duration-300">expand_more</span>
                         </button>
-                        <div className="absolute left-0 mt-2 w-72 bg-white border border-gray-100 shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left z-50">
+                        <div className="absolute left-0 mt-3 w-72 bg-white border border-gray-100 shadow-xl rounded-md opacity-0 invisible scale-y-95 group-hover:opacity-100 group-hover:visible group-hover:scale-y-100 transition-all duration-300 transform origin-top z-50">
                             <div className="py-2">
                                 {solutionsSubmenu.map((item, index) => (
                                     <Link
                                         key={index}
                                         href="#"
-                                        className="block px-4 py-2 text-sm text-[#666666] hover:bg-gray-50 hover:text-[#8B0000]"
+                                        className="block px-4 py-2 text-sm text-[#666666] hover:bg-gray-100 hover:text-[#8B0000] transition-colors"
                                     >
                                         {item}
                                     </Link>
@@ -104,8 +101,8 @@ export default function Header() {
                         </div>
                     </div>
 
-                    <Link className="hover:text-[#8B0000] transition-colors" href="#">Blog</Link>
-                    <Link className="hover:text-[#8B0000] transition-colors" href="/contact">Contact</Link>
+                    <Link className="hover:text-[#8B0000] transition-colors py-2" href="#">Blog</Link>
+                    <Link className="hover:text-[#8B0000] transition-colors py-2" href="/contact">Contact</Link>
                 </nav>
 
                 <button

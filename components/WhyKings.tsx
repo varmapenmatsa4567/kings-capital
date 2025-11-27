@@ -3,8 +3,8 @@ export default function WhyKings() {
         <section className="py-16 sm:py-24 bg-[#8B0000] text-white">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-[family-name:var(--font-display)] font-bold">
-                        Why Kings Financial Capital
+                    <h2 className="text-3xl md:text-4xl font-[family-name:var(--font-display)] font-bold mb-12 text-center">
+                        Why Aarman Capital
                     </h2>
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">

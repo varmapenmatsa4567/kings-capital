@@ -41,11 +41,11 @@ export default function Footer() {
                             </li>
                             <li className="flex items-center">
                                 <span className="material-icons-outlined text-lg mr-3">email</span>
-                                <span>info@kingsfinancialcapital.com</span>
+                                <span>info@aarmancapital.com</span>
                             </li>
                             <li className="flex items-center">
                                 <span className="material-icons-outlined text-lg mr-3">public</span>
-                                <span>https://kingsfinancialcapital.com/</span>
+                                <span>https://aarmancapital.com/</span>
                             </li>
                         </ul>
                     </div>

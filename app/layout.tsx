@@ -15,7 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Kings Financial Capital",
+  title: "Aarman Capital",
   description: "Licensed and Regulated from UAE Financial Authority and Federal Government Law",
 };
 
