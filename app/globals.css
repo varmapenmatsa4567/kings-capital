@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  /* Light theme colors */
+  --primary: #8B0000;
+  --background-light: #F8F7F5;
+  --surface-light: #FFFFFF;
+  --text-light: #333333;
+  --subtle-light: #666666;
+  --border-light: #E5E7EB;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-background-light: var(--background-light);
+  --color-surface-light: var(--surface-light);
+  --color-text-light: var(--text-light);
+  --color-subtle-light: var(--subtle-light);
+  --color-border-light: var(--border-light);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: white;
+  color: #333333;
+}
