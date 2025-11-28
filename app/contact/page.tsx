@@ -99,35 +99,27 @@ export default function Contact() {
                                 <div className="flex items-start">
                                     <span className="material-icons-outlined text-[#D4AF37] mr-4 mt-1">location_on</span>
                                     <p className="leading-relaxed">
-                                        Burj 47, Downtown Near to<br />
-                                        Burj Khalifa .P.O. Box 7777, Dubai.
+                                        5618 TENTH LINE W UNIT 9<br />
+                                        MISSISSAUGA, Ontario L5M7L9
                                     </p>
                                 </div>
 
                                 <div className="flex items-start">
                                     <span className="material-icons-outlined text-[#D4AF37] mr-4 mt-1">phone</span>
                                     <div>
-                                        <p>+971 4 321 7754</p>
-                                        <p>+971 50 455 4588</p>
+                                        <p>+1 (416) 835-5068</p>
                                     </div>
                                 </div>
 
                                 <div className="flex items-start">
-                                    <span className="material-icons-outlined text-[#D4AF37] mr-4 mt-1">call</span>
-                                    <p>Swiss No: +41 76 6626 933</p>
-                                </div>
-
-                                <div className="flex items-start">
                                     <span className="material-icons-outlined text-[#D4AF37] mr-4 mt-1">fax</span>
-                                    <p>+971 4 321 7725</p>
+                                    <p>+1 (416) 835-5068</p>
                                 </div>
 
                                 <div className="flex items-start">
                                     <span className="material-icons-outlined text-[#D4AF37] mr-4 mt-1">email</span>
                                     <div>
-                                        <p className="font-medium text-[#333333]">info@aarmancapital.com</p>
-                                        <p className="mt-1">helpdesk@aarmancapital.com</p>
-                                        <p className="mt-1">clientcare@aarmancapital.com</p>
+                                        <p className="font-medium text-[#333333]">a.khalik@aarmancapital.com</p>
                                     </div>
                                 </div>
 
