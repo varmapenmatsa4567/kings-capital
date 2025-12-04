@@ -45,15 +45,15 @@ export default function Hero() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="text-4xl md:text-6xl font-[family-name:var(--font-display)] font-bold leading-tight"
                 >
-                    Licensed and Regulated from UAE
+                    Unlock Your Financial Potential
                 </motion.h1>
                 <motion.h2
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="text-4xl md:text-6xl font-[family-name:var(--font-display)] font-bold leading-tight mt-2"
+                    className="text-xl md:text-3xl font-light leading-tight mt-4 max-w-3xl mx-auto"
                 >
-                    Financial Authority and Federal Government Law
+                    Expertly managed investments for a secure future, right from the heart of Dubai.
                 </motion.h2>
                 <motion.button
                     initial={{ opacity: 0, y: 30 }}
