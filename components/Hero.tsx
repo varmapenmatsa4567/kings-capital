@@ -53,7 +53,7 @@ export default function Hero() {
                     transition={{ duration: 0.8, delay: 0.4 }}
                     className="text-xl md:text-3xl font-light leading-tight mt-4 max-w-3xl mx-auto"
                 >
-                    Expertly managed investments for a secure future, right from the heart of Dubai.
+                    Expertly managed investments for a secure future, right from the heart of Canada.
                 </motion.h2>
                 <motion.button
                     initial={{ opacity: 0, y: 30 }}
