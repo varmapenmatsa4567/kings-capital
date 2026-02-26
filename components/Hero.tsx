@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 export default function Hero() {
     const images = [
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuDYa1hNqavnBnYKh3Tvy-f5UnCwTVfsWZ5r8EYAI5l9ILqeLvGF56xBCRH8oNoavryS3Pc0X8UljK2GojiqdrDW91sFttanD295NW5hD5Sgt6j3KOR5tphi-kHExDefFVWwWdTWk1RB7zml_YdTW01FU4Bchv58ujfIBS9Ukxav4n1hq97eUc40HVGYXHdax53NDH5hGQEa3WYy-N7L9k-hGJ6cKGrn7HnsMrX8osM7BYaQfiWNs7uhjnXa5z4yAM43zO_NLQLTgxg",
+        "https://images.unsplash.com/photo-1581665805846-6ac29c299f28?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&dl=christian-gabele-_Rfe-TmIOr8-unsplash.jpg",
         "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&dl=sean-pollock-PhYq704ffdA-unsplash.jpg", // Placeholder image 1
         "https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&dl=toa-heftiba-_UIVmIBB3JU-unsplash.jpg", // Placeholder image 2
     ];
